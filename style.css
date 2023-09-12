@@ -34,10 +34,11 @@ body {
     gap: 20px;
     padding-left: 0px !important;
   }
-#pl-0{
-  padding-left: 0px !important;
-  text-align: center;
-}
+
+  #pl-0 {
+    padding-left: 0px !important;
+    text-align: center;
+  }
 
   .logo {
     display: none !important;
@@ -58,8 +59,6 @@ body {
   .small-device-logo h3 {
     color: black;
   }
-
-  .main-card {}
 }
 
 nav {
@@ -277,7 +276,8 @@ form input {
   overflow-x: hidden;
   padding-left: 30px;
 }
-.choose-items i{
+
+.choose-items i {
   font-size: 20px;
   background-color: rgba(18, 18, 18, 0.10);
   padding: 10px;
@@ -285,85 +285,103 @@ form input {
   width: fit-content;
   height: fit-content;
 }
-.choose-item p{
+
+.choose-item p {
   width: 400px;
 }
-.choose-item{
+
+.choose-item {
   margin-top: 10px;
 }
-.divider{
+
+.divider {
   width: 100px;
 }
-.choose-item-3{
+
+.choose-item-3 {
   text-align: end;
 }
-.choose-item-3 .divider{
-margin-left: auto;
+
+.choose-item-3 .divider {
+  margin-left: auto;
 }
+
 /*  Why Choose Us section style end */
 
 
 /* footer style here */
-footer{
+footer {
   background-color: #121212;
   padding: 100px 0px;
   margin-top: 50px;
 }
-.footer-nav a{
+
+.footer-nav a {
   text-decoration: none;
   color: white;
 }
-.footer-icon i{
+
+.footer-icon i {
   font-size: 35px;
   color: white;
   cursor: pointer;
 }
+
 /* footer style end */
 
 @media screen and (max-width:576px) {
-  .main-card{
+  .main-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .memver{
+
+  .memver {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
   }
-  .choose-items{
+
+  .choose-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     padding: 30px;
   }
-  footer{
+
+  footer {
     padding: 30px 30px;
   }
-  .footer-icon{
+
+  .footer-icon {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer-nav{
+
+  .footer-nav {
     display: flex;
     flex-wrap: wrap;
   }
-  .choose-item-3{
+
+  .choose-item-3 {
     text-align: end;
   }
-  .divider{
+
+  .divider {
     display: none;
-    }
-    .choose{
-      padding-left: 0px;
-      overflow: visible;
-    }
-    /* .choose-items i{
+  }
+
+  .choose {
+    padding-left: 0px;
+    overflow: visible;
+  }
+
+  /* .choose-items i{
       display: none;
     } */
-    .choose-item p{
-      width: 100%;
-    }
+  .choose-item p {
+    width: 100%;
+  }
 }

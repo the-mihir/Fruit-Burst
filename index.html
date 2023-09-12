@@ -2,149 +2,413 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst Website Landing Page Design</title>
-
-    <!-- Google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap 5.2 cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
-
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header section start here -->
-    <header class="container ">
-        <nav class="navbar navbar-expand-lg bg-danger rounded-pill mt-2 py-4 px-4">
-            <div class="container rounded-4 ">
-                <div class="mneu__iteams">
-                    <div class="collapse navbar-collapse" id="">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">All Fruts</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="main__logo">
-                    <a class="navbar-brand text-white fs-2 fw-semibold" href="#">
-                        <img class="me-3" src="images/logo.png" alt="logo">Fruit Burst
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="search__option">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-pill" placeholder="Search here" type="search"
-                            aria-label="Search">
-                    </form>
-                </div>
+  <header>
+    <nav class="navbar navbar-expand-lg text-bg-danger">
+      <div class="container-fluid">
+        <div class="small-device-logo flex items-center gap-2">
+          <img src="images/logo.png" alt="">
+          <h3>Fruit Burst</h3>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">All Fruits</a>
+            </li>
+          </ul>
+          <div class="logo me-auto flex items-center gap-2">
+            <img src="images/logo.png" alt="">
+            <h3>Fruit Burst</h3>
+          </div>
+          <form class="d-flex align-items-center " role="search">
+            <input class="form-control me-2 relative rounded-3xl px-5 py-2 border-0" type="search"
+              placeholder="Search here" aria-label="Search">
+            <span class="absolute left-auto right-5 text-dark"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero section Here -->
+    <section class="hero">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-1 active">
+            <div class="content text-center">
+              <h1>Exotic tastes at your <br> doorstep</h1>
+              <p class="text-xs">We supply highly quality organic products</p>
+              <button type="button">Shop Now</button>
             </div>
-        </nav>
-
-
-    </header>
-
-    <!-- main Section Start here -->
-    <main class="my-4">
-        <div class="hero__section container">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative bg-black rounded">
-                        <img src="./images/banner1.png" class="d-block w-100 opacity-75" alt="...">
-                        <div
-                            class="carousel-caption d-none d-md-block position-absolute top-50 start-25 translate-middle-y">
-                            <h1 class="fs-1 fw-bold w-50 mx-auto">Exotic tastes at your doorstep</h1>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button class="btn btn-danger">Shop Now</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative bg-black rounded">
-                        <img src="./images/banner2.png" class="d-block w-100 opacity-75" alt="...">
-                        <div
-                            class="carousel-caption d-none d-md-block position-absolute top-50 start-25 translate-middle-y">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button class="btn btn-danger">Shop Now</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative bg-black rounded">
-                        <img src="./images/banner3.png" class="d-block w-100 opacity-75" alt="...">
-                        <div
-                            class="carousel-caption d-none d-md-block position-absolute top-50 start-25 translate-middle-y">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button class="btn btn-danger">Shop Now</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative rounded">
-                        <img src="./images/banner4.png" class="d-block w-100 opacity-100" alt="...">
-                        <div class="position-absolute top-0 bg-black opacity-50 h-100 w-100">
-                            hhello
-                        </div>
-                        <div
-                            class="carousel-caption d-none d-md-block position-absolute top-50 start-25 translate-middle-y">
-                            <h5 class="fs-1">First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                            <button class="btn btn-danger">Shop Now</button>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+          </div>
+          <div class="carousel-item carousel-item-2">
+            <div class="content text-center">
+              <h1>Exotic tastes at your <br> doorstep</h1>
+              <p class="text-xs">We supply highly quality organic products</p>
+              <button type="button">Shop Now</button>
             </div>
+          </div>
+          <div class="carousel-item carousel-item-3">
+            <div class="content text-center">
+              <h1>Exotic tastes at your <br> doorstep</h1>
+              <p class="text-xs">We supply highly quality organic products</p>
+              <button type="button">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-4">
+            <div class="content text-center">
+              <h1>Exotic tastes at your <br> doorstep</h1>
+              <p class="text-xs">We supply highly quality organic products</p>
+              <button type="button">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- feturd section here -->
+    <section class="feturd">
+      <div class="feturd-item">
+        <div>
+          <img src="images/fruit1.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div>
+          <img src="images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div>
+          <img src="images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div>
+          <img src="images/fruit4.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div>
+          <img src="images/fruit5.png" alt="">
+          <p>Mango</p>
+        </div>
+      </div>
+    </section>
+    <!-- feturd section end -->
+
+    <!-- timer section here -->
+    <section class="container ">
+      <div id="pl-0" class="timer  flex justify-between mt-5">
+        <div>
+          <h2 class="font-extrabold text-[#121212] text-4xl mb-2">Deal of the day</h2>
+          <p class=" text-xs opacity-[.8]">Contrary to popular belief, is not simply random text. It has roots in a
+            piece
+            of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max timerr">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:37;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- card  -->
+
+      <div class="main-card flex">
+        <!-- first card  -->
+        <div class="card  bg-white rounded-e-sm">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+          </div>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <div class="text-center space-y-4 mt-4">
+            <h4 class="text-sm font-semibold text-info"><a class="detail">Details
+              </a></h4>
+          </div>
+        </div>
+        <!-- second card  -->
+        <div class="card  bg-white rounded-e-sm">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Orange</p>
+          </div>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <div class="text-center space-y-4 mt-4">
+            <h4 class="text-sm font-semibold text-info"><a class="detail" href="">Details</a></h4>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class="card  bg-white rounded-e-sm">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Red Dragon</p>
+          </div>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <div class="text-center space-y-4 mt-4">
+            <h4 class="text-sm font-semibold text-info"><a class="detail" href="">Details</a></h4>
+          </div>
+        </div>
+        <!-- four card  -->
+        <div class="card  bg-white rounded-e-sm">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Banana</p>
+          </div>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <div class="text-center space-y-4 mt-4">
+            <h4 class="text-sm font-semibold text-info"><a class="detail" href="">Details</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <button class="btn-all">Shop All</button>
+      </div>
+    </section>
+    <section class="clint-section text-center">
+      <div class="text-center">
+        <h1 class="font-extrabold text-white text-5xl">Meet the team section</h1>
+        <p class="text-white text-base pt-6">Contrary to popular belief, is not simply random text. It has roots in a
+          piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <!-- member img first  -->
+      <div class="member text-white text-center mt-5">
+        <div class="flex gap-5 justify-center align-items-center memver">
+          <div class="members">
+            <img src="images/member1.png" alt="">
+            <h2 class="text-2xl text-white font-bold text-center">Awlad Hossain</h2>
+            <p class="text-white text-center">Fruits Expert</p>
+            <div class="justify-center">
+              <i class="fa-brands  fa-facebook"></i>
+              <i class="fa-brands  fa-twitter"></i>
+              <i class="fa-brands  fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- member second  -->
+          <div class="members">
+            <img src="images/member2.png" alt="">
+            <h2>Safia Chowdhury</h2>
+            <p>Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- member third  -->
+          <div class="members">
+            <img src="images/member3.png" alt="">
+            <h2>Rokib Hossain</h2>
+            <p>Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- member four  -->
+          <div class="members">
+            <img src="images/member4.png" alt="">
+            <h2>Chaity</h2>
+            <p>Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us section here -->
+    <section class="choose container">
+      <div class="text-center">
+        <h1 class="fs-1 fw-bold">Why Choose Us</h1>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+          literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <div class="choose-items row ">
+        <div class="choose-item col">
+         <div class="flex gap-2">
+          <i class="fa-solid fa-people-group"></i>
+          <div>
+            <h2>Dedicated Team</h2>
+            <div class="divider"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+         </div>
+         <div class="flex gap-2">
+          <i class="fa-regular fa-heart"></i>
+          <div>
+            <h2>Fresh is Best</h2>
+            <div class="divider"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+         </div>
+
+         <div class="flex gap-2">
+          <i class="fa-solid fa-gift"></i>
+          <div>
+            <h2>Gift Certificates</h2>
+            <div class="divider"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+         </div>
 
         </div>
+        <div class="choose-item col">
+          <img src="images/whychoose1.png" alt="">
+        </div>
+        <div class="choose-item choose-item-3 col">
 
-    </main>
+          <div class="flex gap-2">
+            <div>
+              <h2>Integrated Supplier</h2>
+              <div class="divider"></div>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <i class="fa-solid fa-comments-dollar"></i>
+           </div>
 
-    <!-- Footer Section start Here -->
-    <footer>
+           <div class="flex gap-2">
+             <div>
+               <h2>Sustainable Practice</h2>
+               <div class="divider"></div>
+               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+             </div>
+            <i class="fa-solid fa-ice-cream"></i>
+           </div>
+           <div class="flex gap-2">
+             <div>
+               <h2>The Benefits Only</h2>
+               <div class="divider"></div>
+               <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+             </div>
+            <i class="fa-regular fa-thumbs-up"></i>
+           </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us section end -->
 
-    </footer>
 
-
-
-
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-
+  </main>
+  <footer>
+<div class="footer-logo justify-center align-items-center flex gap-2">
+  <img src="images/logo.png" alt="">
+  <h2 class="text-white fs-2">Fruit Burst</h2>
+</div>
+<div class="footer-nav flex justify-center gap-5 mt-5">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Shop</a>
+  <a href="#">All Fruits</a>
+  <a href="#">Support</a>
+  <a href="#">My Account</a>
+</div>
+<div class="footer-icon flex justify-center gap-5 mt-5">
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-apple"></i>
+</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/337002c4cc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
